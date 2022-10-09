@@ -558,9 +558,34 @@ test -d /home/linuxbrew/.linuxbrew &amp;&amp; eval &quot;$(/home/linuxbrew/.linu
 test -r ~/.zprofile &amp;&amp; echo &quot;eval \&quot;$($(brew --prefix)/bin/brew shellenv)\&quot;&quot; &gt;&gt; ~/.zprofile
 echo &quot;eval \&quot;$($(brew --prefix&quot;)/bin/brew shellenv)\&quot;&quot; &gt;&gt; ~/.profile
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="git-large-file-system"><a class="header" href="#git-large-file-system">Git Large File System</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="git"><a class="header" href="#git">Git</a></h1>
+<hr />
+<h2 id="initial-setup"><a class="header" href="#initial-setup">Initial Setup</a></h2>
+<pre><code class="language-bash">git config --global user.name &quot;&lt;name&gt;&quot;
+
+git config --global user.email &lt;email&gt;
+</code></pre>
+<hr />
+<h2 id="ssh-key-for-github"><a class="header" href="#ssh-key-for-github">SSH Key for Github</a></h2>
+<p>Generate the keys by running the following command. Run the command prefferably in an important folder and via thr <code>Git Bash</code> Terminal.</p>
+<blockquote>
+<p>My personal choice for the folder is <code>~/.ssh</code>.</p>
+</blockquote>
+<pre><code class="language-terminal">ssh-keygen -o -t rsa -C &lt;email-address-here&gt;;
+</code></pre>
+<p>This will start the Key Generation Process. When prompted, press enter to accept the default values.</p>
+<p>Open the SSH Folder in a Text Editor. Copy the <code>public key</code> and add it to your GitHub account settings.</p>
+<p>You are <strong>All Done</strong> now. Try cloning the repository now.
+An error might pop up, but it's fine. For the first time that is completely normal.</p>
+<hr />
+<h2 id="amending-commit-messages"><a class="header" href="#amending-commit-messages">Amending Commit Messages</a></h2>
+<pre><code class="language-bash">git commit --amend
+</code></pre>
+<p>Opens the Text Editor with the previous commit message. Edit the message and save the file.</p>
+<hr />
+<h2 id="git-large-file-system"><a class="header" href="#git-large-file-system">Git Large File System</a></h2>
 <p>Uses LFS for files in the repository that are larger in size.</p>
-<h2 id="useage"><a class="header" href="#useage">Useage</a></h2>
+<h3 id="useage"><a class="header" href="#useage">Useage</a></h3>
 <pre><code class="language-terminal">git lfs track &lt;*.extention&gt; or &lt;filename_with_extention&gt;
 </code></pre>
 <p>Now <code>add</code> and <code>commit</code> as normal.</p>
@@ -568,15 +593,36 @@ echo &quot;eval \&quot;$($(brew --prefix&quot;)/bin/brew shellenv)\&quot;&quot; 
 
 git commit -m &quot;Added large file&quot;
 </code></pre>
-<h2 id="ssh-key-for-github"><a class="header" href="#ssh-key-for-github">SSH Key for Github</a></h2>
-<p>Generate the keys by running the following command. Run the command prefferably in an important folder.
-My personal choice for the folder is <code>~/.ssh</code>.</p>
-<pre><code class="language-terminal">ssh-keygen -o -t rsa -C &lt;email-address-here&gt;;
+<hr />
+<h2 id="merging"><a class="header" href="#merging">Merging</a></h2>
+<p><img src="git/../../static/git-branch.png" alt="Merging" /></p>
+<pre><code class="language-terminal"># Start a new feature
+git checkout -b new-feature main
+# Edit some files
+git add &lt;file&gt;
+git commit -m &quot;Start a feature&quot;
+# Edit some files
+git add &lt;file&gt;
+git commit -m &quot;Finish a feature&quot;
+# Merge in the new-feature branch
+git checkout main
+git merge new-feature
+git branch -d new-feature
 </code></pre>
-<p>This will start the Key Generation Process. When prompted, press enter to accept the default values.
-Open the SSH Folder in a Text Editor. Copy the <code>public key</code> and add it to your GitHub account settings.
-You are <strong>All Done</strong> now. Try cloning the repository now.
-An error might pop up, but it's fine. For the first time that is completely normal.</p>
+<p>The above will work the same if we had a Three-Way Merge.</p>
+<hr />
+<h2 id="rebasing"><a class="header" href="#rebasing">Rebasing</a></h2>
+<p>Rebasing is the process of moving or combining a sequence of commits to a new base commit. Rebasing is most useful and easily visualized in the context of a feature branching workflow.</p>
+<p><img src="git/../../static/git-rebase.png" alt="Rebasing" /></p>
+<pre><code class="language-terminal"># Create a feature branch based off of main
+git checkout -b feature_branch main
+# Edit files
+git commit -a -m &quot;Adds new feature&quot;
+
+git rebase &lt;base&gt;
+# &lt;base&gt; can ben ID, a branch name, a tag, or a relative reference to HEAD
+
+</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="database"><a class="header" href="#database">Database</a></h1>
 <h2 id="oracle"><a class="header" href="#oracle">Oracle</a></h2>
 <h3 id="creating-a-new-user"><a class="header" href="#creating-a-new-user">Creating a new User</a></h3>
@@ -642,22 +688,6 @@ code dotfiles
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
