@@ -213,6 +213,20 @@ git rebase &lt;base&gt;
 # &lt;base&gt; can ben ID, a branch name, a tag, or a relative reference to HEAD
 
 </code></pre>
+<hr />
+<h2 id="submodule-already-in-index-error"><a class="header" href="#submodule-already-in-index-error">Submodule Already in Index Error</a></h2>
+<pre><code class="language-terminal"># Remove submodule
+git submodule deinit -f &lt;submodule-name&gt;
+rmr .gitmodules
+</code></pre>
+<p>Or</p>
+<pre><code class="language-terminal"># Remove all submodule
+git submodule deinit -f --all
+rmr .gitmodules
+</code></pre>
+<p>Now, remove the cached submodule</p>
+<pre><code class="language-terminal">git rm --cached &lt;submodule_dir-name&gt;
+</code></pre>
 
                     </main>
 
@@ -243,6 +257,22 @@ git rebase &lt;base&gt;
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
