@@ -227,6 +227,13 @@ rmr .gitmodules
 <p>Now, remove the cached submodule</p>
 <pre><code class="language-terminal">git rm --cached &lt;submodule_dir-name&gt;
 </code></pre>
+<h2 id="removing-remote-tracking"><a class="header" href="#removing-remote-tracking">Removing Remote Tracking</a></h2>
+<pre><code class="language-terminal">git remote remove origin
+</code></pre>
+<hr />
+<h2 id="git-setting-up-new-remote"><a class="header" href="#git-setting-up-new-remote">Git Setting up new Remote</a></h2>
+<pre><code class="language-terminal">git remote set-url origin git://new.url.here
+</code></pre>
 
                     </main>
 
@@ -257,22 +264,6 @@ rmr .gitmodules
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
