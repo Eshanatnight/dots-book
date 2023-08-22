@@ -5,7 +5,10 @@
         <meta charset="UTF-8">
         <title>dots</title>
         <meta name="robots" content="noindex" />
+
+
         <!-- Custom HTML head -->
+        
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,9 +20,11 @@
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
         <link rel="stylesheet" href="css/print.css" media="print">
+
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="fonts/fonts.css">
+
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
@@ -28,6 +33,7 @@
         <!-- Custom theme stylesheets -->
         <link rel="stylesheet" href=".\theme\catppuccin.css">
         <link rel="stylesheet" href=".\theme\catppuccin-highlight.css">
+
     </head>
     <body>
         <!-- Provide site root to javascript -->
@@ -78,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="Windows/Windows.html"><strong aria-hidden="true">1.</strong> Windows</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Windows/cpp/cpp.html"><strong aria-hidden="true">1.1.</strong> cpp</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Windows/cpp/msys.html"><strong aria-hidden="true">1.1.1.</strong> msys2</a></li><li class="chapter-item expanded "><a href="Windows/cpp/vc.html"><strong aria-hidden="true">1.1.2.</strong> vcpkg & cmake</a></li></ol></li><li class="chapter-item expanded "><a href="Windows/rust.html"><strong aria-hidden="true">1.2.</strong> rust</a></li><li class="chapter-item expanded "><a href="Windows/settings.html"><strong aria-hidden="true">1.3.</strong> settings</a></li></ol></li><li class="chapter-item expanded "><a href="Windows-Terminal/Windows-Terminal.html"><strong aria-hidden="true">2.</strong> Windows Terminal</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Windows-Terminal/Powershell/powershell.html"><strong aria-hidden="true">2.1.</strong> PowerShell</a></li></ol></li><li class="chapter-item expanded "><a href="wsl/wsl.html"><strong aria-hidden="true">3.</strong> Windows Subsystem for Linux</a></li><li class="chapter-item expanded "><a href="git/git.html"><strong aria-hidden="true">4.</strong> Git</a></li><li class="chapter-item expanded "><a href="Database/database.html"><strong aria-hidden="true">5.</strong> Database</a></li><li class="chapter-item expanded "><a href="dotfiles/dotfiles.html"><strong aria-hidden="true">6.</strong> dotfiles</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="Windows/Windows.html"><strong aria-hidden="true">1.</strong> Windows</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Windows/cpp.html"><strong aria-hidden="true">1.1.</strong> cpp</a></li><li class="chapter-item expanded "><a href="Windows/rust.html"><strong aria-hidden="true">1.2.</strong> rust</a></li><li class="chapter-item expanded "><a href="Windows/settings.html"><strong aria-hidden="true">1.3.</strong> settings</a></li></ol></li><li class="chapter-item expanded "><a href="Windows-Terminal/Windows-Terminal.html"><strong aria-hidden="true">2.</strong> Windows Terminal</a></li><li class="chapter-item expanded "><a href="wsl/wsl.html"><strong aria-hidden="true">3.</strong> Windows Subsystem for Linux</a></li><li class="chapter-item expanded "><a href="git/git.html"><strong aria-hidden="true">4.</strong> Git</a></li><li class="chapter-item expanded "><a href="Database/database.html"><strong aria-hidden="true">5.</strong> Database</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -86,7 +92,7 @@
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
+                                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky bordered">
                     <div class="left-buttons">
                         <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -117,6 +123,7 @@
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
+
                     </div>
                 </div>
 
@@ -130,6 +137,7 @@
                         </ul>
                     </div>
                 </div>
+
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script type="text/javascript">
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
@@ -162,36 +170,72 @@
 <h3 id="winget"><a class="header" href="#winget">Winget</a></h3>
 <ul>
 <li>Google.Chrome</li>
-<li>Google.Drive</li>
 <li>Giorgiotani.Peazip</li>
 <li>Kitware.CMake</li>
 <li>Microsoft.PowerToys</li>
+<li>TheDocumentFoundation.LibreOffice</li>
 <li>OpenJS.NodeJS</li>
-<li>Rustlang.Rustup</li>
 <li>SumatraPDF.SumatraPDF</li>
 <li>GnuWin32.Tar</li>
 <li>VLC media player</li>
+<li>Vivaldi</li>
 <li>OliverSchwendener.ueli</li>
 <li>JanDeDobbeleer.OhMyPosh</li>
 <li>Rainmeter.Rainmeter</li>
 <li>Microsoft.WindowsTerminal</li>
 <li>Git.Git</li>
+<li>Bitwarden.Bitwarden</li>
 <li>msys2.msys2</li>
 <li>Microsoft.VisualStudioCode</li>
 </ul>
+<h3 id="install-from-elsewhere"><a class="header" href="#install-from-elsewhere">Install from Elsewhere</a></h3>
+<ul>
+<li>rustup</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="cpp"><a class="header" href="#cpp">CPP</a></h1>
-<p>Common CPP Dev Settings that i use.</p>
-<h2 id="microsoft-visual-studio"><a class="header" href="#microsoft-visual-studio">Microsoft Visual Studio</a></h2>
-<p>My Visual Studio Directory Setup</p>
-<ol>
-<li>Output Dir: <code>$(SolutionDir)bin\$(Platform)\$(Configuration)\</code></li>
-<li>Intermideates Dir: <code>$(SolutionDir)bin\intermideates\$(Platform)\$(Configuration)\</code></li>
-<li>Additional Include Directory: <code>$(SolutionDir)src\include,$(SolutionDir)include</code></li>
-</ol>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="msys2"><a class="header" href="#msys2">MSYS2</a></h1>
+<h2 id="visual-studio"><a class="header" href="#visual-studio">Visual Studio</a></h2>
+<p>Installations is simple. Just download the installer from <a href="https://visualstudio.microsoft.com/downloads/">here</a>.</p>
+<hr />
+<blockquote>
+<p><strong>Visual C++ Compiler stdc++=20</strong></p>
+</blockquote>
+<h3 id="installation-guide"><a class="header" href="#installation-guide">Installation guide</a></h3>
+<ul>
+<li>
+<p>Install Visual Sudio</p>
+</li>
+<li>
+<p>Modify Installation</p>
+</li>
+<li>
+<p>Individual Components &gt; search <code>modules</code></p>
+</li>
+</ul>
+<h3 id="activation"><a class="header" href="#activation">Activation</a></h3>
+<ul>
+<li>
+<p>Solution Properties &gt; Configuration Properties &gt; General: C++ Language Standard = &quot;Preview - Features from the Latest C++ Working Draft (/std:c++latest)&quot;</p>
+</li>
+<li>
+<p>Solution Properties &gt; C/C++ &gt; Language : Enable External C++ Standard Library Modules = &quot;Yes(/experimental:module)&quot;</p>
+</li>
+</ul>
+<h3 id="import-commands"><a class="header" href="#import-commands"><strong>import commands</strong></a></h3>
+<ul>
+<li>std.filesystem -&gt; <code>&lt;filesystem&gt;</code></li>
+<li>std.regex -&gt; <code>&lt;regex&gt;</code></li>
+<li>std.memory -&gt; <code>&lt;memory&gt;</code></li>
+<li>std.threading -&gt; <code>&lt;atomic&gt;, &lt;condition_variable&gt;, &lt;future&gt;, &lt;mutex&gt;, &lt;shared_mutex&gt; and &lt;thread&gt;</code></li>
+<li>std.core -&gt; Everything else in the Standard Library</li>
+</ul>
+<blockquote>
+<p>Note: -&gt; = Provides the contents of headers</p>
+</blockquote>
+<hr />
+<h2 id="mingw"><a class="header" href="#mingw">MinGW</a></h2>
 <p>MSYS2 should be installed via winget.</p>
 <p>In the event that it is not, it can be installed from <a href="https://www.msys2.org/">here</a>.</p>
-<h2 id="installingupdating-the-msys2-toolchain"><a class="header" href="#installingupdating-the-msys2-toolchain">Installing/Updating the MSYS2 toolchain</a></h2>
+<h3 id="installingupdating-the-msys2-toolchain"><a class="header" href="#installingupdating-the-msys2-toolchain">Installing/Updating the MSYS2 toolchain</a></h3>
 <p>To update the MSYS2-MINGW toolchain just run the following command in the MSYS2 bash shell.</p>
 <pre><code class="language-terminal">pacman -Syu
 
@@ -205,11 +249,12 @@ pacman -S mingw-w64-clang-x86_64-toolchain
 <blockquote>
 <p>To update the toolchain use the <code>-u</code> flag with the <code>-S</code> flag.</p>
 </blockquote>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="vcpkg--cmake"><a class="header" href="#vcpkg--cmake">Vcpkg &amp; CMake</a></h1>
 <hr />
+<h2 id="cmake"><a class="header" href="#cmake">CMake</a></h2>
+<p>CMake can be installed via winget.</p>
 <h2 id="vcpkg"><a class="header" href="#vcpkg">Vcpkg</a></h2>
 <h3 id="installation"><a class="header" href="#installation">Installation</a></h3>
-<p>To install <em><strong>vcpkg</strong></em> you can run the <a href="Windows/cpp/../scripts/install-vcpkg.ps1">script</a>. It's a
+<p>To install <em><strong>vcpkg</strong></em> you can run the <a href="Windows/.https://github.com/Eshanatnight/dotfiles/blob/main/scripts/pwsh/upgrade-vcpkg.ps1">script</a>. It's a
 Poweshell Script that will clone the repository from the
 <a href="https://github.com/microsoft/vcpkg.git">official page</a> in the location <code>D:\tools\vcpkg</code>
 and then bootstrapping vcpkg.</p>
@@ -254,19 +299,27 @@ place where the top level <code>CMakelists.txt</code> file is.</p>
     ]
 }
 </code></pre>
-<hr />
-<h2 id="cmake"><a class="header" href="#cmake">CMake</a></h2>
-<h3 id="vscode-settings"><a class="header" href="#vscode-settings">VSCode Settings</a></h3>
 <p>To use CMake and vcpkg in Manifest Mode. Add the following to the vscode <code>settings.json</code> file.</p>
 <pre><code class="language-json">&quot;cmake.configureSettings&quot;: {
      &quot;CMAKE_TOOLCHAIN_FILE&quot;: &quot;path/to/vcpkg/scripts/buildsystems/vcpkg.cmake&quot;
 }
 &quot;cmake.configureOnOpen&quot;: true
 </code></pre>
-<h3 id="cmake-common-settings"><a class="header" href="#cmake-common-settings">CMAKE Common Settings</a></h3>
-<pre><code class="language-cmake">set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-</code></pre>
+<h2 id="jetbrains-ide-integration"><a class="header" href="#jetbrains-ide-integration">JetBrains IDE Integration</a></h2>
+<ol>
+<li>
+<p>In CLion, go to Settings / Preferences | Build, Execution, Deployment | Toolchains.</p>
+</li>
+<li>
+<p>Click plus icon to create a new toolchain and select WSL.</p>
+</li>
+</ol>
+<p>3.In the Environment field, select one of the available WSL distributions. The list includes the distributions detected by wsl.exe --list, which includes the imported ones.</p>
+<p>4.Now to start using the toolchain, do the following:</p>
+<ul>
+<li>CMake</li>
+<li>Makefile</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="rust"><a class="header" href="#rust">Rust</a></h1>
 <h2 id="installation-1"><a class="header" href="#installation-1">Installation</a></h2>
 <p>Rust dev toolchain should be installed via winget. But in the case it didn't, it can be installed from <a href="https://www.rust-lang.org/tools/install">here</a>.</p>
@@ -296,9 +349,8 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 <div style="break-before: page; page-break-before: always;"></div><h1 id="settings"><a class="header" href="#settings">Settings</a></h1>
 <h2 id="configuration-files"><a class="header" href="#configuration-files">Configuration Files</a></h2>
 <p>The Settings files can be found</p>
-<p><a href="https://github.com/Eshanatnight/dotfiles/blob/main/.visual-sutdio-settings/.vs.settings.tar.gz.tar.gz?raw=true">Visual Studio Settings</a></p>
-<p><a href="https://github.com/Eshanatnight/dotfiles/blob/main/.visual-sutdio-settings/vs-extention.tar.gz?raw=true">Visual Studio Extentions</a></p>
-<p><a href="https://github.com/Eshanatnight/dotfiles/tree/main/.jetbrains-settings">Jetbrains</a></p>
+<p><a href="https://github.com/Eshanatnight/dotfiles/tree/main/settings/.visual-sutdio-settings">Visual Studio</a></p>
+<p><a href="https://github.com/Eshanatnight/dotfiles/tree/main/settings/.jetbrains-settings">Jetbrains</a></p>
 <h2 id="jetbrains"><a class="header" href="#jetbrains">Jetbrains</a></h2>
 <h3 id="configure-a-wsl-toolchain"><a class="header" href="#configure-a-wsl-toolchain">Configure a WSL Toolchain</a></h3>
 <ol>
@@ -318,17 +370,16 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 <li>Makefile</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="windows-terminal"><a class="header" href="#windows-terminal">Windows Terminal</a></h1>
-<ul>
-<li><a href="https://github.com/Eshanatnight/dotfiles/blob/main/Windows%20Terminal/settings.json">settings.json</a></li>
-<li><a href="https://github.com/Eshanatnight/dotfiles/tree/main/Windows%20Terminal/PowerShell">Powershell Folder</a></li>
-</ul>
 <h2 id="settingsjson"><a class="header" href="#settingsjson">settings.json</a></h2>
 <p>contains the settings for the terminal. Themes, colors, etc.</p>
+<ul>
+<li><a href="https://github.com/Eshanatnight/dotfiles/blob/main/Terminal/settings.json">settings.json</a></li>
+</ul>
 <h2 id="powershell-folder"><a class="header" href="#powershell-folder">Powershell Folder</a></h2>
 <ul>
-<li><a href="https://github.com/Eshanatnight/dotfiles/blob/main/Windows%20Terminal/PowerShell/Microsoft.PowerShell_profile.ps1">Powershell_Profile</a></li>
-<li><a href="https://github.com/Eshanatnight/dotfiles/blob/main/Windows%20Terminal/PowerShell/setup-windows-terminal.ps1">setup</a></li>
-<li><a href="https://github.com/Eshanatnight/dotfiles/tree/main/Windows%20Terminal/PowerShell/Theme">theme</a></li>
+<li><a href="https://github.com/Eshanatnight/dotfiles/blob/main/Terminal/PowerShell/Microsoft.PowerShell_profile.ps1">Powershell_Profile</a></li>
+<li><a href="https://github.com/Eshanatnight/dotfiles/blob/main/Terminal/PowerShell/setup-windows-terminal.ps1">setup</a></li>
+<li><a href="https://github.com/Eshanatnight/dotfiles/blob/main/Terminal/PowerShell/Theme/">theme</a></li>
 </ul>
 <h2 id="powershell_profile"><a class="header" href="#powershell_profile">Powershell_Profile</a></h2>
 <p>conains The Powershell Profile folder that has the profile for the terminal.</p>
@@ -345,11 +396,11 @@ conda config --set auto_activate_base false
 </code></pre>
 <p>Then restart the Terminal.</p>
 <h3 id="how-to-install-pip"><a class="header" href="#how-to-install-pip">How to install pip?</a></h3>
-<p>If for some reason you dont have pip installed in your computer. Run the <a href="https://github.com/Eshanatnight/dotfiles/blob/main/Python/get-pip.py">python script</a></p>
+<p>If for some reason you dont have pip installed in your computer. Run the <a href="https://github.com/Eshanatnight/dotfiles/blob/main/scripts/python/get-pip.py">python script</a></p>
 <pre><code class="language-terminal">cd python get-pip.py
 </code></pre>
 <h2 id="removed-settings"><a class="header" href="#removed-settings">Removed Settings</a></h2>
-<p>Settings that are removed from the <code>settings.json</code> of the Windows Terminal.</p>
+<p>Settings that are removed from the <a href="https://github.com/Eshanatnight/dotfiles/blob/main/Terminal/settings.json">settings.json</a> of the Windows Terminal.</p>
 <pre><code class="language-json">{
     &quot;profiles&quot;:{
         &quot;list&quot;: [
@@ -405,9 +456,6 @@ conda config --set auto_activate_base false
     }
 }
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="powershell"><a class="header" href="#powershell">Powershell</a></h1>
-<p>Run The Script in the dotfiles.
-Then apply the profile to the powershell and set the theme to the correct location.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="windows-subsystem-for-linux"><a class="header" href="#windows-subsystem-for-linux">Windows Subsystem For Linux</a></h1>
 <h2 id="installation-2"><a class="header" href="#installation-2">Installation</a></h2>
 <p>Run the following command</p>
@@ -430,7 +478,7 @@ Then apply the profile to the powershell and set the theme to the correct locati
 <pre><code class="language-terminal">git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k;
 </code></pre>
 <h3 id="config-files"><a class="header" href="#config-files">Config Files</a></h3>
-<p>the config files can be found in the <a href="https://github.com/Eshanatnight/dotfiles/tree/main/wsl">dotfiles</a> repo</p>
+<p>the config files can be found in the <a href="https://github.com/Eshanatnight/dotfiles">dotfiles</a> repo</p>
 <hr />
 <h2 id="installing-ccpp-devtools"><a class="header" href="#installing-ccpp-devtools">Installing C/CPP Devtools</a></h2>
 <pre><code class="language-terminal">sudo apt-get update;
@@ -478,99 +526,26 @@ required.</p>
 </code></pre>
 <hr />
 <h2 id="homebrew"><a class="header" href="#homebrew">Homebrew</a></h2>
-<p>To install <code>homebrew</code></p>
-<pre><code class="language-bash">cd ~;
-/bin/zsh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
-test -d ~/.linuxbrew &amp;&amp; eval &quot;$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)&quot;
-test -d /home/linuxbrew/.linuxbrew &amp;&amp; eval &quot;$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)&quot;
-test -r ~/.zprofile &amp;&amp; echo &quot;eval \&quot;$($(brew --prefix)/bin/brew shellenv)\&quot;&quot; &gt;&gt; ~/.zprofile
-echo &quot;eval \&quot;$($(brew --prefix&quot;)/bin/brew shellenv)\&quot;&quot; &gt;&gt; ~/.profile
-</code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="git"><a class="header" href="#git">Git</a></h1>
-<hr />
-<h2 id="initial-setup"><a class="header" href="#initial-setup">Initial Setup</a></h2>
-<pre><code class="language-bash">git config --global user.name &quot;&lt;name&gt;&quot;
-
-git config --global user.email &lt;email&gt;
-</code></pre>
-<hr />
+<p>You can just run the script <a href="https://github.com/Eshanatnight/dotfiles/blob/main/fresh-setup/install-homebrew.sh">install-homebrew.sh</a>.
+It follows the instructions on the official site installs and tests it.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="git-a-version-control-system"><a class="header" href="#git-a-version-control-system">Git: A Version Control System</a></h1>
 <h2 id="ssh-key-for-github"><a class="header" href="#ssh-key-for-github">SSH Key for Github</a></h2>
-<p>Generate the keys by running the following command. Run the command prefferably in an important folder and via thr <code>Git Bash</code> Terminal.</p>
-<blockquote>
-<p>My personal choice for the folder is <code>~/.ssh</code>.</p>
-</blockquote>
+<p>Generate the keys by running the following command. Run the command prefferably in an important folder.
+My personal choice for the folder is <code>~/.ssh</code>.</p>
 <pre><code class="language-terminal">ssh-keygen -o -t rsa -C &lt;email-address-here&gt;;
 </code></pre>
-<p>This will start the Key Generation Process. When prompted, press enter to accept the default values.</p>
-<p>Open the SSH Folder in a Text Editor. Copy the <code>public key</code> and add it to your GitHub account settings.</p>
-<p>You are <strong>All Done</strong> now. Try cloning the repository now.
+<p>This will start the Key Generation Process. When prompted, press enter to accept the default values.
+Open the SSH Folder in a Text Editor. Copy the <code>public key</code> and add it to your GitHub account settings.
+You are <strong>All Done</strong> now. Try cloning the repository now.
 An error might pop up, but it's fine. For the first time that is completely normal.</p>
-<hr />
-<h2 id="amending-commit-messages"><a class="header" href="#amending-commit-messages">Amending Commit Messages</a></h2>
-<pre><code class="language-bash">git commit --amend
-</code></pre>
-<p>Opens the Text Editor with the previous commit message. Edit the message and save the file.</p>
-<hr />
-<h2 id="git-large-file-system"><a class="header" href="#git-large-file-system">Git Large File System</a></h2>
+<h2 id="git-large-file-system-useage"><a class="header" href="#git-large-file-system-useage">Git Large File System: Useage</a></h2>
 <p>Uses LFS for files in the repository that are larger in size.</p>
-<h3 id="useage"><a class="header" href="#useage">Useage</a></h3>
 <pre><code class="language-terminal">git lfs track &lt;*.extention&gt; or &lt;filename_with_extention&gt;
 </code></pre>
 <p>Now <code>add</code> and <code>commit</code> as normal.</p>
 <pre><code class="language-terminal">git add large_file
 
 git commit -m &quot;Added large file&quot;
-</code></pre>
-<hr />
-<h2 id="merging"><a class="header" href="#merging">Merging</a></h2>
-<p><img src="data:image/png;base64,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" alt="Merging" /></p>
-<pre><code class="language-terminal"># Start a new feature
-git checkout -b new-feature main
-# Edit some files
-git add &lt;file&gt;
-git commit -m &quot;Start a feature&quot;
-# Edit some files
-git add &lt;file&gt;
-git commit -m &quot;Finish a feature&quot;
-# Merge in the new-feature branch
-git checkout main
-git merge new-feature
-git branch -d new-feature
-</code></pre>
-<p>The above will work the same if we had a Three-Way Merge.</p>
-<hr />
-<h2 id="rebasing"><a class="header" href="#rebasing">Rebasing</a></h2>
-<p>Rebasing is the process of moving or combining a sequence of commits to a new base commit. Rebasing is most useful and easily visualized in the context of a feature branching workflow.</p>
-<p><img src="data:image/png;base64,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" alt="Rebasing" /></p>
-<pre><code class="language-terminal"># Create a feature branch based off of main
-git checkout -b feature_branch main
-# Edit files
-git commit -a -m &quot;Adds new feature&quot;
-
-git rebase &lt;base&gt;
-# &lt;base&gt; can ben ID, a branch name, a tag, or a relative reference to HEAD
-
-</code></pre>
-<hr />
-<h2 id="submodule-already-in-index-error"><a class="header" href="#submodule-already-in-index-error">Submodule Already in Index Error</a></h2>
-<pre><code class="language-terminal"># Remove submodule
-git submodule deinit -f &lt;submodule-name&gt;
-rmr .gitmodules
-</code></pre>
-<p>Or</p>
-<pre><code class="language-terminal"># Remove all submodule
-git submodule deinit -f --all
-rmr .gitmodules
-</code></pre>
-<p>Now, remove the cached submodule</p>
-<pre><code class="language-terminal">git rm --cached &lt;submodule_dir-name&gt;
-</code></pre>
-<h2 id="removing-remote-tracking"><a class="header" href="#removing-remote-tracking">Removing Remote Tracking</a></h2>
-<pre><code class="language-terminal">git remote remove origin
-</code></pre>
-<hr />
-<h2 id="git-setting-up-new-remote"><a class="header" href="#git-setting-up-new-remote">Git Setting up new Remote</a></h2>
-<pre><code class="language-terminal">git remote set-url origin git://new.url.here
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="database"><a class="header" href="#database">Database</a></h1>
 <h2 id="oracle"><a class="header" href="#oracle">Oracle</a></h2>
@@ -610,45 +585,63 @@ rmr .gitmodules
 </code></pre>
 <pre><code class="language-terminal">pragma writable_schema = 0
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="dotfiles"><a class="header" href="#dotfiles">dotfiles</a></h1>
-<p><img src="http://images.thoughtbot.com/thoughtbot-dotfiles-prompt.png" alt="prompt" /></p>
-<p>Check out the repo <a href="https://github.com/Eshanatnite/dotfiles.git">here</a></p>
-<h2 id="install"><a class="header" href="#install">Install</a></h2>
-<p>Clone onto your laptop:</p>
-<pre><code>git clone --recursive https://github.com/Eshanatnite/dotfiles.git
-
-code dotfiles
-</code></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+
+
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
             </nav>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
+
+
         <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
         <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
+
         <script type="text/javascript">
         window.addEventListener('load', function() {
             window.setTimeout(window.print, 100);
         });
         </script>
+
     </body>
 </html>
